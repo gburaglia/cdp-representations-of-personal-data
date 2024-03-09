@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
+
+  <title>Personal Call Log Exploration</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="product.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="position-relative overflow-hidden p-3 p-md-2 m-md-3 bg-light">
+    <div class="col-md-10 p-lg-5 mx-auto my-auto">
+      <h1 class="display-4 font-weight-normal">Representations of Personal Data</h1>
+      <p class="lead font-weight-normal">Exploring my call log history
+      </p>
+      <p>In corporate settings, call logs can help measure customer service performance or assess telecommunication call
+        service. In personal settings, call logs can serve as evidence in criminal investigations. Both scenarios likely
+        analyze volume, frequency, and call duration metrics. However, the average personal user does not typically
+        analyze their call history information.
+
+      </p>
+
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Ranking</h2>
+        <p class="lead">I explored the rankings of who I spoke to the most.</p>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/17089220">
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+        </div>
+      </div>
+
+    </div>
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Social Circles</h2>
+        <p class="lead">I explored the various groups of people I spoke with.</p>
+        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/17089192">
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="position-relative overflow-hidden p-3 p-md-2 m-md-3 bg-light">
+    <div class="col-md-10 p-lg-5 mx-auto my-auto">
+      <h2 class="display-5">First Iteration
+      </h2>
+      <p>
+        The unconventional format I explored was a network, where I visualized a dataset of the relationships in my
+        life, contextualized by my call log history dataset. I exported my call logs from my cellphone provider and
+        manually combined them with my internet calls through WhatsApp and Facetime. I then cleaned the dataset to
+        exclude spam and non-personal calls.
+        During my process, I ranked who I spoke to the most and grouped people to recognize social circle patterns.
+      </p>
+      <p>
+        Even though this ranking is telling, as Data Feminism teaches, considering context highlights hidden patterns
+        and motivations. These numbers don’t show that I currently live in Atlanta with my boyfriend, I see him daily,
+        and our conversations mainly occur in person. I’m also slowly building a social circle in Atlanta, but many of
+        the people I speak to here, I talk to in person and are not represented in my call log history dataset. These
+        hidden patterns are addressed by incorporating a timeline that contextualizes my relationships.
+      </p>
+      <p>
+        Additionally, the highest-ranked relationship on my call logs is my father, Bernardo. However, what is not
+        evident is the emotional turmoil he has been experiencing in the last few weeks. I have recently had
+        uncharacteristically long calls trying to talk him out of negative thought spirals and reassure him that he has
+        countless blessings. This could have been accounted for by additionally recording and visualizing conversation
+        topics.
+
+      </p>
+      <p>
+
+        I received a critique from classmates on the first iteration. The three most common comments were a desire for
+        more context around when/how I met the people in my network diagram, call frequency, and where I fit into all
+        the relationships.
+
+      </p>
+      <img src="/images/first_iteration.png" alt="First Iteration"></img>
+
+    </div>
+  </div>
+
+  <div class="position-relative overflow-hidden p-3 p-md-2 m-md-3 bg-light">
+    <div class="col-md-10 p-lg-5 mx-auto my-auto">
+      <h2 class="display-5">Final Representation
+      </h2>
+      <p>My final design addresses the three main critique points and involves a third dataset to add the context of
+        when/where I made these relationships.
+      </p>
+      <div class="flourish-embed flourish-network" data-src="visualisation/17042912">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+      </div>
+      <div class="flourish-embed flourish-bubble-chart" data-src="visualisation/17087226">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="container py-5">
+    <div class="col-6 col-md text-center">
+      <small class="d-block mb-3 text-muted">
+        <p>By Gabriela Buraglia </p>
+        <p>Resources: Excel, <a href="https://flourish.studio/">Flourish</a>, T-mobile call logs </p>
+      </small>
+
+
+    </div>
+
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../../../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../../../dist/js/bootstrap.min.js"></script>
+  <script src="../../../../assets/js/vendor/holder.min.js"></script>
+  <script>
+    Holder.addTheme('thumb', {
+      bg: '#55595c',
+      fg: '#eceeef',
+      text: 'Thumbnail'
+    });
+  </script>
+</body>
+
+</html>
