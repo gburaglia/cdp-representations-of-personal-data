@@ -23,7 +23,7 @@
   <div class="position-relative overflow-hidden p-3 p-md-2 m-md-3 bg-light">
     <div class="col-md-10 p-lg-5 mx-auto my-auto">
       <h1 class="display-4 font-weight-normal">Representations of Personal Data</h1>
-      <p class="lead font-weight-normal">Exploring my call log history
+      <p class="lead font-weight-normal">Exploring my call log history for 16 days
       </p>
       <p>In corporate settings, call logs can help measure customer service performance or assess telecommunication call
         service. In personal settings, call logs can serve as evidence in criminal investigations. Both scenarios likely
@@ -31,6 +31,9 @@
         analyze their call history information.
 
       </p>
+      <p>I exported my call logs from my cellphone provider and manually combined them with my internet calls through
+        WhatsApp and Facetime for the past 16 days. I then cleaned the dataset to exclude spam and non-personal calls.
+        During my process, I ranked who I spoke to the most and grouped people to recognize social circle patterns.</p>
 
     </div>
   </div>
@@ -64,15 +67,9 @@
       <h2 class="display-5">First Iteration
       </h2>
       <p>
-        The unconventional format I explored was a network, where I visualized a dataset of the relationships in my
-        life, contextualized by my call log history dataset. I exported my call logs from my cellphone provider and
-        manually combined them with my internet calls through WhatsApp and Facetime. I then cleaned the dataset to
-        exclude spam and non-personal calls.
-        During my process, I ranked who I spoke to the most and grouped people to recognize social circle patterns.
-      </p>
-      <p>
-        Even though this ranking is telling, as Data Feminism teaches, considering context highlights hidden patterns
-        and motivations. These numbers don’t show that I currently live in Atlanta with my boyfriend, I see him daily,
+        Even though the ranking was telling, as Data Feminism teaches, considering context highlights hidden patterns
+        and motivations. These numbers don’t show that I currently live in Atlanta with my boyfriend, Gustavo, I see him
+        daily,
         and our conversations mainly occur in person. I’m also slowly building a social circle in Atlanta, but many of
         the people I speak to here, I talk to in person and are not represented in my call log history dataset. These
         hidden patterns are addressed by incorporating a timeline that contextualizes my relationships.
@@ -85,6 +82,10 @@
         topics.
 
       </p>
+      <p>The unconventional format I explored was a network, where I visualized a dataset of the relationships in my
+        life, contextualized by my call log history dataset. Each node is someone I talked to on the phone in the past
+        16 days, the size is the total number of minutes, the colors are what social circles they belong to, and the
+        links are the relationships between these people.</p>
       <p>
 
         I received a critique from classmates on the first iteration. The three most common comments were a desire for
@@ -92,7 +93,8 @@
         the relationships.
 
       </p>
-      <img src="images/first_iteration.png" alt="First Iteration"></img>
+      <img src="images/first_iteration.jpg" alt="First Iteration" width="100%"
+        style='border: 0.15px solid #000000'></img>
 
     </div>
   </div>
@@ -102,7 +104,9 @@
       <h2 class="display-5">Final Representation
       </h2>
       <p>My final design addresses the three main critique points and involves a third dataset to add the context of
-        when/where I made these relationships.
+        when/where I made these relationships. I also refined the links to only show independent relationships and not
+        acquaintances mediated through me, and I added extra pop-up information such as total minutes and call
+        frequency.
       </p>
       <div class="flourish-embed flourish-network" data-src="visualisation/17042912">
         <script src="https://public.flourish.studio/resources/embed.js"></script>
@@ -110,6 +114,8 @@
       <div class="flourish-embed flourish-bubble-chart" data-src="visualisation/17087226">
         <script src="https://public.flourish.studio/resources/embed.js"></script>
       </div>
+      <img src="images/timeline.png" alt="First Iteration" width="100%"></img>
+
     </div>
   </div>
 
@@ -118,7 +124,8 @@
     <div class="col-6 col-md text-center">
       <small class="d-block mb-3 text-muted">
         <p>By Gabriela Buraglia </p>
-        <p>Resources: Excel, <a href="https://flourish.studio/">Flourish</a>, T-mobile call logs </p>
+        <p>Resources: <a href="https://flourish.studio/">Flourish</a>, <a href="https://www.canva.com/">Canva</a>, <a
+            href="https://data-feminism.mitpress.mit.edu/">Data Feminism</a>, Excel, and T-mobile call logs </p>
       </small>
 
 
